@@ -16,3 +16,7 @@ if __name__ == "__main__":
     else:
         print u"你看到这句输出，就应该知道为什么不推荐对非内置类型使用type来求类型了"
 
+    print isinstance(2 , float)
+    print isinstance("a" ,(str,unicode))
+    print isinstance((2,3) , (str, list, tuple))
+
