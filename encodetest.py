@@ -14,3 +14,8 @@ s = "ÖĞÎÄ²âÊÔ"  #Õâ¸öµÄ±àÂë·½Ê½ÓĞÎÄ¼ş¿ªÍ·µÄencodingÖ¸¶¨£¬Èç¹ûÎÄ¼ş¿ªÍ·Ã»ÓĞÖÆ¶¨£¬¾
 s = "ÖĞÎÄ²âÊÔ".decode("gbk") + u"chinaese test"  # "+" Ê±ĞèÒªÏÈ°Ñ"ÖĞÎÄ²âÊÔ"×ª»»ÎªunicodeÔÙ×ªutf-8Í¬ºóÃæµÄÏà¼Ó£¬µ«ÊÇÈç¹ûÃ»ÓĞ.decode("gbk")£¬
 # ¾Í»áÄ¬ÈÏÓÃsys.defaultencoding,µ«Ä¬ÈÏµÄdefaultencodingÊÇascii,ÎŞ·¨´¦ÀíÖĞÎÄ£¬ËùÒÔ³ö´í¡£
 print s
+
+# 3
+filehandle = open("test.txt", 'r')
+print filehandle.read() #Èç¹ûÎÄ¼şÊÇutf-8±£´æµÄ£¬ÇĞÊä³öÖÕ¶ËÒ²ÊÇutf-8µÄ£¬Êä³ö¾ÍÃ»ÓĞÎÊÌâ£¬Èç¹ûÊä³öÖÕ¶ËÊÇgbkµÄ£¬¾Í»áÂÒÂë
+filehandle.close()
