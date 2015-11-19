@@ -1,0 +1,32 @@
+#coding:utf-8
+__author__ = 'Dell'
+
+class student(object):
+    def __init__(self, name, course=[]):
+        self.name = name
+        self.course = course
+
+    def addcourse(self, coursename):
+        self.course.append(coursename)
+
+    def printcourse(self):
+        for c in self.course:
+            print c
+        print "______________________"
+
+if "__main__" == __name__:
+    ljj = student("LJJ")
+    ljj.addcourse("Code")
+    ljj.printcourse()
+
+    lk = student("LK")
+    lk.addcourse("Python")
+    lk.printcourse()
+
+    list1 = ["a", "b", "c"]
+    list2 = list1
+    list1.append("d")
+    print list1, list2
+    list3 = list1[:]
+    list3.remove("a")
+    print list3, list1
