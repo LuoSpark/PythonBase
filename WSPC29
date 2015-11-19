@@ -1,4 +1,5 @@
 #coding:utf-8
+# wspc32:警惕默认参数潜在问题
 __author__ = 'Dell'
 
 class student(object):
